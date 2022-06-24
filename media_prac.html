@@ -1,0 +1,52 @@
+<!-- <p>미디어 쿼리 실습</p> 태그 삽입
+화면 넓이 500px을 기준으로 500px 이상일 경우 <body> 태그의 배경색이 하늘색, 300px 이하일 경우 배경색이 오렌지
+화면 높이 300px을 기준으로 300px 이하일 경우 <p> 태그의 폰트를 변경 하고, 500px 이상일 경우 배경색이 초록색 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face{
+            @font-face {
+            font-family: 'CBNUJIKJI';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202@1.0/CBNUJIKJI.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+    }
+        body{
+            background-color: blue;
+        }
+
+        @media screen and (min-width: 500px) {
+            body{
+                background-color: coral;
+            }
+        }
+        @media screen and (max-width: 300px) {
+            body{
+                background-color: orange;
+        }
+        }   
+        @media screen and (max-height: 300px){
+            body{
+                font-family: 'CBNUJIKJI';
+            }
+        }
+
+        @media screen and (min-height: 500px){
+            body{
+                background-color: green;
+            }
+        }
+    }
+</style>
+    
+</head>
+<body>
+    <p>미디어 쿼리 실습</p>
+</body>
+</html>

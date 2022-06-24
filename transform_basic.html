@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 40px;
+        }
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: royalblue;
+            transition: 1s;
+        }
+
+        div>.child{
+            width: 100px;
+            height: 100px;
+            background-color: coral;
+            transition: 1s;
+            opacity: 1;
+        }
+
+        div>.child:active{
+            /* transform: perspective(300px); /*원근법 함수는 제일 앞에 작성해야함
+            transform: rotateY(45deg); */
+            /* transition: skewX(-0, 45deg); */
+            transform: perspective(300px) rotateY();
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class ="child">가나다라</div>
+    </div>
+</body>
+</html>

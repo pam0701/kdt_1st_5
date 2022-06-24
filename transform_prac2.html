@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: royalblue;
+            margin-bottom: 20px;
+            transition: 1s;
+        }
+        div .child1{
+            width: 100px;
+            height: 100px;
+            background-color: coral;
+            transition: 1s;
+            opacity: 1;
+            margin-bottom: 20px;
+        }
+        div>.child1:active{
+            transform: rotate(45deg);
+            transform: translate(120px, 0);
+        }
+        div .child2{
+            width: 100px;
+            height: 100px;
+            background-color: coral;
+            transition: 1s;
+            opacity: 1;
+            margin-bottom: 20px;
+        }
+        div>.child2:active{
+            transform: translate(100px, 0); 
+            transform: scaleX(2, 0);
+        }
+        div .child3{
+            width: 100px;
+            height: 100px;
+            background-color: coral;
+            transition: 1s;
+            opacity: 1;
+            margin-bottom: 20px;
+        }
+        div>.child3:active{
+            transform: rotateY(180deg);
+        }
+        div .child4{
+            width: 100px;
+            height: 100px;
+            background-color: coral;
+            transition: 1s;
+            opacity: 1;
+            margin-bottom: 20px;
+        }
+        div>.child4:active{
+            transform: skewX(-45deg);
+        }
+    </style>
+</head>
+<body>
+    <div><div class ="child1"></div></div>
+    <div><div class ="child2"></div></div>
+    <div><div class ="child3"></div></div>
+    <div><div class ="child4"></div></div>       
+</body>
+</html>
